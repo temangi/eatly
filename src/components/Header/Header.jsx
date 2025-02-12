@@ -1,4 +1,7 @@
+'use client'
+
 import React from "react";
+import { useState } from "react";
 import scss from "./Header.module.scss";
 import logo from "../Header/assets/logo.svg";
 import Link from "next/link";
@@ -6,9 +9,12 @@ import Image from "next/image";
 import { arr, links } from "./Header.js";
 
 function Header() {
+
+  const [active, setActive] = useState("Menu")
+
   let navs = arr.map(({ title, link }, index) => (
     <nav key={index}>
-      <Link className={scss.link} href={{ link }}>
+      <Link onClick={() => setActive(title)} className={ title == active ? scss.active : scss.nonActive} href={{ link }}>
         {title}
       </Link>
     </nav>
@@ -16,7 +22,7 @@ function Header() {
 
   let aut = links.map(({ title, link }, index) => (
     <div className={scss.aut} key={index}>
-      <Link className={scss.btns} href={{ link }}>
+      <Link className={scss.btns} href={ link }>
         {title}
       </Link>
     </div>
@@ -25,7 +31,7 @@ function Header() {
   return (
    <header className={scss.header}>
      <div className={scss.main}>
-      <Link href={"/"}><Image src={logo} alt="" /></Link>
+      <Link href={"/"}><Image src={logo} alt="jbjbj" priority/></Link>
       <nav>{navs}</nav>
       <aside> {aut}</aside>
     </div>

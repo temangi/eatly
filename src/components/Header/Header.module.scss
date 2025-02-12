@@ -11,15 +11,22 @@
     nav {
       display: flex;
       gap: 50px;
-      .link {
+
+      .nonActive {
         text-decoration: none;
         font-size: 18px;
         color: #606060;
         font-weight: 500;
-        transition: .3s;
-        &:hover{
-            color: #6c5fbc;
+        transition: 0.5s;
+        &:hover {
+          color: #6c5fbc;
         }
+      }
+      .active {
+        color: #6c5fbc;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
       }
     }
     aside {
@@ -44,7 +51,7 @@
       }
     }
   }
-  hr{
-    color: #CBCBCB;
+  hr {
+    color: #cbcbcb;
   }
 }
