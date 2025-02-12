@@ -4,7 +4,7 @@ import Header from "@/components/Header/Header";
 export default function Home() {
   return (
    <>
-   <h1>afafaf</h1>
+   <h1></h1>
    <Header/>
    <Footer/>
    </>
