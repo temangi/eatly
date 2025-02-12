@@ -14,8 +14,8 @@ export const arr = [
         link: "/pricing"
     },
     {
-        title: "Contacts",
-        link: "/contacts"
+        title: "Contact",
+        link: "/contact"
     }
 ]
 

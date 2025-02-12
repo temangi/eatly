@@ -1,0 +1,55 @@
+.get{
+    position: relative;
+    padding: 10% 100px 15% 100px;
+    main{
+        background: #6C5FBC;
+        background-image: url("../../assets/back.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 50px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        border-radius: 25px;
+        h1{
+            font-size: 70px;
+            font-family: "Inter", serif !important;
+        }
+        form{
+            width: 35%;
+            background: #ffffff;
+            padding: 10px;
+            display: flex;
+            border-radius: 15px;
+            input{
+                width: 100%;
+                border: none;
+                outline: none;
+                color: #878787;
+                font-weight: 600;
+                background: #ffffff;
+                font-size: 15px;
+                &::placeholder{
+                    color: #878787;
+                }
+            }
+            button{
+                cursor: pointer;
+                color: #F7F8FA;
+                background: #6C5FBC;
+                padding: 15px 20px;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+    }
+    .tamak{
+        position: absolute;
+        right: 200px;
+        bottom: 150px;
+    }
+}
