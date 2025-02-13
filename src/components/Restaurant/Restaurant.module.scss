@@ -1,0 +1,111 @@
+.restaurant {
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  main {
+    display: flex;
+    justify-content: space-between;
+    .eachCard {
+      display: flex;
+      flex-direction: column;
+      background: white;
+      width: 30%;
+      border-radius: 30px;
+      cursor: pointer;
+
+      -webkit-box-shadow: 0px 24px 92px -32px rgba(172, 173, 185, 1);
+      -moz-box-shadow: 0px 24px 92px -32px rgba(172, 173, 185, 1);
+      box-shadow: 0px 24px 92px -32px rgba(172, 173, 185, 1);
+      .imgs {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        width: 100%;
+      }
+      article {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+        gap: 10px;
+        .type {
+          color: #daa31a;
+          font-size: 13px;
+          background: #f7edd0;
+          padding: 5px;
+          border-radius: 5px;
+        }
+
+        h1 {
+          font-size: 26px;
+          color: #323142;
+        }
+        footer {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          aside {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            span {
+              color: #8e97a6;
+              font-size: 19px;
+            }
+            div {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+            }
+          }
+          .fav {
+            background: #dbd9ee;
+            border: 1px solid #dbd9ee;
+            padding: 10px 14px;
+            border-radius: 50px;
+            transition: 0.4s ease-in;
+          }
+          .add {
+            background: none;
+            border: 1px solid #6c5fbc;
+            padding: 10px 14px;
+            border-radius: 50px;
+            transition: 0.4s ease-out;
+          }
+        }
+      }
+      &:nth-of-type(2) {
+        article {
+          .type {
+            color: #fb471d;
+            background: #f7c5ba;
+          }
+        }
+      }
+    }
+  }
+
+  h1 {
+    font-size: 45px;
+    color: #323142;
+    text-align: center;
+    span {
+      color: #6c5fbc;
+    }
+  }
+  .viewAll {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: #acadb9;
+    font-size: 20px;
+    justify-content: end;
+    font-weight: 500;
+    transition: .3s;
+    &:hover{
+      color: #6c5fbc;
+    }
+  }
+}
