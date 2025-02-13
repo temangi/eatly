@@ -1,20 +1,20 @@
 'use client'
 
 import React from "react";
-import { useState } from "react";
 import scss from "./Header.module.scss";
 import logo from "../Header/assets/logo.svg";
 import Link from "next/link";
 import Image from "next/image";
 import { arr, links } from "./Header.js";
+import {usePathname} from "next/navigation"
 
 function Header() {
 
-  const [active, setActive] = useState("Menu")
+  const pathname = usePathname()
 
   let navs = arr.map(({ title, link }, index) => (
     <nav key={index}>
-      <Link onClick={() => setActive(title)} className={ title == active ? scss.active : scss.nonActive} href={{ link }}>
+      <Link className={ link == pathname ? scss.active : scss.nonActive} href={link }>
         {title}
       </Link>
     </nav>
