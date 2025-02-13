@@ -1,9 +1,14 @@
 import React from 'react'
+import Header from "@/components/Header/Header.jsx"
+import Footer from '@/components/Footer/Footer.jsx'
 
-function Menu() {
+function page() {
   return (
-    <div>Menu</div>
+    <>
+    <Header/>
+    <Footer/>
+    </>
   )
 }
 
-export default Menu
+export default page
