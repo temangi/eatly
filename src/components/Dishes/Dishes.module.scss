@@ -1,0 +1,137 @@
+.dishes {
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  h1 {
+    font-size: 45px;
+    color: #323142;
+    text-align: center;
+    span {
+      color: #6c5fbc;
+    }
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+
+    .eachCard {
+      display: flex;
+      flex-direction: column;
+      background: white;
+      border-radius: 30px;
+      cursor: pointer;
+      position: relative;
+      padding: 30px 10px 10px 10px;
+      -webkit-box-shadow: 0px 24px 92px -32px rgba(172, 173, 185, 1);
+      -moz-box-shadow: 0px 24px 92px -32px rgba(172, 173, 185, 1);
+      box-shadow: 0px 24px 92px -32px rgba(172, 173, 185, 1);
+
+      .heart {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+      }
+
+      .fav {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+       path{
+        fill: #323142;
+       }
+      }
+      .imgs {
+        width: 100%;
+        height: 200px;
+      }
+      article {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 10px;
+        p{
+          font-size: 13px;
+          padding: 5px;
+          border-radius: 5px;
+        }
+        .type {
+          color: #daa31a;
+          background: #f7edd0;
+        }
+        .trending{
+          color: #fb471d;
+          background: #f7c5ba;
+        }
+        .supreme{
+          color: #309D5B;
+          background: #79d49dd9;
+        }
+
+        h1 {
+          font-size: 26px;
+          color: #323142;
+        }
+        footer {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          aside {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            span {
+              color: #8e97a6;
+              font-size: 17px;
+            }
+            div {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+            }
+          }
+          .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h2 {
+              display: flex;
+              font-size: 25px;
+              align-items: baseline;
+              span {
+                color: #8e97a6;
+                font-weight: 500;
+                font-size: 18px;
+              }
+            }
+            .plus {
+              padding: 12px;
+              background: #323142;
+              border-radius: 10px;
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+  .viewAll {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: #acadb9;
+    font-size: 20px;
+    justify-content: end;
+    font-weight: 500;
+    transition: 0.3s;
+    &:hover {
+      color: #6c5fbc;
+    }
+  }
+}
