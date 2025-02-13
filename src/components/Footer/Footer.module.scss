@@ -7,7 +7,7 @@
     align-items: center;
     padding-bottom: 30px;
     border-bottom: #818181 0.5px solid;
-    .logo{
+    .logo {
       cursor: pointer;
     }
     main {
@@ -16,6 +16,10 @@
       .links {
         text-decoration: none;
         color: #999999;
+        transition: 0.3s ease-in-out;
+      }
+      .links:hover {
+        color: #6c5fbc;
       }
     }
   }
@@ -24,40 +28,44 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 50px;
-    p{
-        color: #999999;
+    p {
+      color: #999999;
     }
     article {
       nav {
         display: flex;
         align-items: center;
         gap: 40px;
-        .facebook,.linkedin,.twitter,.instagram{
-          path{
-           transition: fill .3s ease-in-out;
+        .facebook,
+        .linkedin,
+        .twitter,
+        .instagram {
+          path {
+            transition: fill 0.3s ease-in-out;
           }
-         }
-       }
-      
-       .facebook:hover {
-        path{
-         fill : blue ;
+          cursor: pointer;
         }
-       }
-       .instagram:hover {
-         path{
-          fill : rgb(231, 93, 125) ;
-         }
+      }
+
+      .facebook:hover {
+        path {
+          fill: blue;
         }
-        .twitter:hover {
-         path{
-          fill : rgb(131, 201, 224) ;
-         }
+      }
+      .instagram:hover {
+        path {
+          fill: rgb(231, 93, 125);
         }
-       .linkedin:hover {
-         path{
-          fill : rgb(78, 221, 93) ;
-         }
+      }
+      .twitter:hover {
+        path {
+          fill: rgb(131, 201, 224);
+        }
+      }
+      .linkedin:hover {
+        path {
+          fill: rgb(78, 221, 93);
+        }
       }
     }
   }
