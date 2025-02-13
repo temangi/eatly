@@ -1,0 +1,64 @@
+.footer {
+  padding: 70px 100px;
+  background-color: #eaeaea;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: #818181 0.5px solid;
+    .logo{
+      cursor: pointer;
+    }
+    main {
+      display: flex;
+      gap: 50px;
+      .links {
+        text-decoration: none;
+        color: #999999;
+      }
+    }
+  }
+  aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    p{
+        color: #999999;
+    }
+    article {
+      nav {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        .facebook,.linkedin,.twitter,.instagram{
+          path{
+           transition: fill .3s ease-in-out;
+          }
+         }
+       }
+      
+       .facebook:hover {
+        path{
+         fill : blue ;
+        }
+       }
+       .instagram:hover {
+         path{
+          fill : rgb(231, 93, 125) ;
+         }
+        }
+        .twitter:hover {
+         path{
+          fill : rgb(131, 201, 224) ;
+         }
+        }
+       .linkedin:hover {
+         path{
+          fill : rgb(78, 221, 93) ;
+         }
+      }
+    }
+  }
+}
