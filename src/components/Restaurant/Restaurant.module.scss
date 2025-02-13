@@ -13,7 +13,7 @@
       width: 30%;
       border-radius: 30px;
       cursor: pointer;
-       
+
       -webkit-box-shadow: 0px 24px 92px -32px rgba(172, 173, 185, 1);
       -moz-box-shadow: 0px 24px 92px -32px rgba(172, 173, 185, 1);
       box-shadow: 0px 24px 92px -32px rgba(172, 173, 185, 1);
@@ -26,7 +26,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 10px 10px 20px 30px;
+        padding: 10px 20px;
         gap: 10px;
         .type {
           color: #daa31a;
@@ -35,7 +35,6 @@
           padding: 5px;
           border-radius: 5px;
         }
-       
 
         h1 {
           font-size: 26px;
@@ -57,24 +56,33 @@
             div {
               display: flex;
               align-items: center;
+              gap: 5px;
             }
           }
           .fav {
             background: #dbd9ee;
+            border: 1px solid #dbd9ee;
             padding: 10px 14px;
             border-radius: 50px;
-            margin-right: 15px;
+            transition: 0.4s ease-in;
+          }
+          .add {
+            background: none;
+            border: 1px solid #6c5fbc;
+            padding: 10px 14px;
+            border-radius: 50px;
+            transition: 0.4s ease-out;
           }
         }
       }
-      &:nth-of-type(2){
-        article{
-            .type{
-                color : #FB471D;
-                background:  #F7C5BA;
-            }
+      &:nth-of-type(2) {
+        article {
+          .type {
+            color: #fb471d;
+            background: #f7c5ba;
+          }
         }
-    }
+      }
     }
   }
 
@@ -95,5 +103,9 @@
     font-size: 20px;
     justify-content: end;
     font-weight: 500;
+    transition: .3s;
+    &:hover{
+      color: #6c5fbc;
+    }
   }
 }
