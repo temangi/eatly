@@ -4,6 +4,7 @@ import Header from "@/components/Header/Header.jsx";
 import Main from "@/components/Main/Main";
 import Restaurant from "@/components/Restaurant/Restaurant.jsx"
 import Get50 from "@/components/Get50/Get50";
+import Customer from "@/components/Customer/Customer";
 import Dishes from "@/components/Dishes/Dishes.jsx";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
    <Main/>
    <Menu/>
    <Restaurant/>
+   <Customer/>
    <Dishes/>
    <Get50/>
    <Footer/>
