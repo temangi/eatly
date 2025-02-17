@@ -3,11 +3,17 @@
   flex-direction: column;
   gap: 30px;
   padding: 50px 100px;
+  position: relative;
   background: none;
+  z-index: 2;
   .main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    .burger{
+      display: none;
+      cursor: pointer;
+    }
     nav {
       display: flex;
       gap: 50px;
@@ -53,5 +59,28 @@
   }
   hr {
     color: #cbcbcb;
+  }
+}
+@media (max-width : 1100px) {
+  .header{
+    .main{
+      aside{
+        padding-left: 0%;
+      }
+    }
+  }
+}
+@media (max-width : 1000px) {
+  .header{
+    padding: 20px 50px 10px 50px;
+    gap: 10px;
+    .main{
+      .burger{
+        display: block;
+      }
+      nav,aside{
+        display: none;
+      }
+    }
   }
 }

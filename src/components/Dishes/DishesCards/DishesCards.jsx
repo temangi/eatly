@@ -21,13 +21,13 @@ function DishesCards({img, title, time, clas, type, rating, price,cent}) {
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           stroke="#323142"
-          stroke-width="20"
+          strokeWidth="20"
         >
           <path
             d="M110 180s-70-40-80-80c-10-20-10-40 0-60s40-40 80 0c40-40 70-20 80 0s10 40 0 60c-20 40-80 80-80 80z"
             fill="none"
             stroke="#323142"
-            stroke-width="20"
+            strokeWidth="20"
           />
         </svg>
         <Image src={img} priority className={scss.imgs} alt="img1" />
