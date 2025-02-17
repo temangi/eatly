@@ -10,12 +10,12 @@ import Dishes from "@/components/Dishes/Dishes.jsx";
 export default function Home() {
   return (
    <>
-   {/* <Header/>
+   <Header/>
    <Main/>
    <Menu/>
    <Restaurant/>
    <Customer/>
-   <Dishes/> */}
+   <Dishes/>
    <Get50/>
    <Footer/>
    </>
