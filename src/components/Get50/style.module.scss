@@ -55,8 +55,9 @@
     }
 }
 
-@media (max-width : 768px) {
+@media (max-width : 900px) {
     .get{
+        padding: 10% 50px 15% 50px;
         main{
             display: flex;
             flex-direction: column;
