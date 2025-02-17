@@ -1,4 +1,4 @@
-import React from "react";
+  import React from "react";
 import scss from "./Menu.module.scss";
 import phone from "../Menu/assets/phone.svg";
 import arrow from "../Menu/assets/arrow.svg";
