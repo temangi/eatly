@@ -1,0 +1,103 @@
+.mainMenu {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+  position: relative;
+  .illust {
+    position: absolute;
+    top: 15px;
+    right: 38%;
+  }
+  .mainPart,
+  main,
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainPart {
+    width: 60%;
+    gap: 100px;
+    .get {
+      position: relative;
+      main {
+        background: #6c5fbc;
+        background-image: url("../../assets/back.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 50px;
+        height: 150px;
+        color: #ffffff;
+        align-items: flex-start;
+        border-radius: 25px;
+        position: relative;
+        h1 {
+          font-weight: 800;
+          font-size: 80px;
+          font-family: "Inter", serif !important;
+        }
+        h2 {
+          position: absolute;
+          top: 45%;
+          font-weight: 800;
+          font-size: 95px;
+          color: #7c6fcd;
+          font-family: "Inter", serif !important;
+        }
+      }
+      .tamak {
+        position: absolute;
+        right: 20px;
+        top: 50px;
+      }
+    }
+    .bottom {
+      gap: 20px;
+      div {
+        display: flex;
+        align-items: center;
+        background: #ededed;
+        border-radius: 15px;
+        padding: 10px;
+        input {
+          border: none;
+          outline: none;
+          padding: 10px;
+          border-radius: 15px;
+          background: #ededed;
+          color: #5041b4;
+          font-size: 20px;
+          width: 100%;
+        }
+      }
+      aside {
+        display: flex;
+        width: 100%;
+        p {
+          flex-grow: 1;
+          padding: 15px;
+          text-align: center;
+          border: 2px solid #6c5fbc;
+          color: #6c5fbc;
+          font-size: 20px;
+          font-weight: 500;
+          transition: 0.4s;
+          cursor: pointer;
+          &:nth-of-type(1) {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-right: none;
+          }
+          &:nth-of-type(2) {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+          }
+          &:hover {
+            background: #6c5fbc;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

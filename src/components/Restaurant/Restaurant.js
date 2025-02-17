@@ -25,3 +25,13 @@ export const arr = [
         rating: "4.8"
     },
 ]
+
+export const dishes = [
+    {
+        img: img1,
+        type: "Trending",
+        title: "The Burger King",
+        time: "24min",
+        rating: "4.9"  
+    }
+]

@@ -1,0 +1,79 @@
+.customer {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 50px;
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    h1 {
+      padding-left: 40%;
+      display: flex;
+      align-items: center;
+      font-size: 40px;
+      gap: 10px;
+      color: #6c5fbc;
+      span {
+        color: black;
+      }
+    }
+    section {
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+      header {
+        box-shadow: 0px 4px 500px rgba(0, 0, 0, 0.2);
+        padding: 30px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        main {
+          display: flex;
+          justify-content: space-between;
+          div {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            aside {
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+              p {
+                font-size: 20px;
+                font-weight: 500;
+                white-space: nowrap;
+              }
+              span {
+                font-size: 15px;
+                color: #5e5d5d;
+              }
+            }
+            .chel {
+              border-radius: 100%;
+              width: 32%;
+              height: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .line {
+    display: flex;
+    z-index: 1;
+    background: #6b5fbc40;
+    width: 45%;
+    height: 10px;
+    border-radius: 20px;
+    .miniLine {
+      z-index: 2;
+      width: 25%;
+      height: 10px;
+      border-radius: 20px;
+      background: #6c5fbc;
+    }
+  }
+}
