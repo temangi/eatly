@@ -1,6 +1,7 @@
 .get{
     position: relative;
     padding: 10% 100px 15% 100px;
+    margin: 50px 0 100px 0;
     main{
         background: #6C5FBC;
         background-image: url("../../assets/back.svg");
@@ -51,5 +52,27 @@
         position: absolute;
         right: 200px;
         bottom: 150px;
+    }
+}
+
+@media (max-width : 900px) {
+    .get{
+        padding: 10% 50px 15% 50px;
+        main{
+            display: flex;
+            flex-direction: column;
+            background-image: none;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 110px;
+            form{
+                width: 100%;
+            }
+        }
+        .tamak{
+            bottom: -50px;
+            width: 30%;
+            right: 35%;
+        }
     }
 }
