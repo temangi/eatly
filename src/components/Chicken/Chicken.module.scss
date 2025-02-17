@@ -1,0 +1,131 @@
+.chicken {
+  background: #f9f9f9;
+  padding: 90px 70px;
+  display: flex;
+  gap: 20%;
+  footer {
+    width: 40%;  
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+  }
+  .fish {
+    font-size: 40px;
+    span {
+      color: #6c5fbc;
+    }
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    p {
+      margin: 0;
+      padding: 0;
+      color: #acadb9;
+    }
+    .chickenCard {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 18px;
+      background: #ffffff;
+      border-radius: 10px;
+      transition: 1.5s;
+      article {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+        }
+      }
+      &:hover {
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  main {
+    background: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+    width: 30%;
+    box-shadow: 0px 20px 20px #c8c7ca;
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .p {
+            background: #fafafa;
+            border-radius: 10px;
+            display: flex;
+            padding: 10px 10px;
+            gap: 10px;
+            font-size: 20px;
+          }
+      }
+    footer {
+        width: 100%;
+        gap: 20px;
+      h1 {
+        font-size: 30px;
+      }
+      .chickenLeft {
+        display: flex;
+        border: 2px solid #edf2f7;
+        border-radius: 20px;
+        padding: 30px 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      .cardMain{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        aside {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            div {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+            }
+          }
+          img {
+            background: #f4f0ff;
+            border-radius: 50px;
+            padding: 10px 10px;
+          }
+          h1 {
+            font-size: 20px;
+          }
+          p {
+            color: #a0aec0;
+          }
+       }
+       span{
+        font-size: 20px;
+        font-weight: 700;
+       }
+      .line{
+        height: 10px;
+        width: 100%;
+        border-radius: 20px;    
+        .inLine{
+            display: block;
+            width: 70%;
+            height: 10px;
+            border-radius: 20px;    
+        }
+      }
+      }
+    }
+  }
+}
