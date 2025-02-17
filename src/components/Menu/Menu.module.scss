@@ -94,6 +94,7 @@
     flex-direction: column-reverse;
     padding: 50px;
     align-items: center;
+    gap: 100px;
     main{
       padding: 20px;
       align-items: center;
@@ -107,6 +108,12 @@
             font-size: 15px;
             margin-left: 0px;
           }
+        }
+        .line{
+          position: absolute;
+          top: 38%;
+          left: 20px;
+          transform: rotate(100deg);
         }
     }
   }
