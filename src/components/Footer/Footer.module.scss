@@ -70,3 +70,45 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 70px 50px 30px 50px;
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      align-items: flex-start;
+      border-width: 100%;
+      padding-bottom: 40px;
+      main {
+        display: flex;
+        flex-direction: column;
+        .links {
+          color: #606060;
+          font-size: 20px;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+      }
+    }
+    aside{
+      display: flex;
+      flex-direction: column;
+      padding-top: 40px;
+      p{
+        font-size: 18px;
+      }
+      article{
+        position: absolute;
+        top: 16%;
+        right: 50px;
+        nav{
+          gap: 20px;
+        }
+      }
+    }
+  }
+}
