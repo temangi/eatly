@@ -120,6 +120,7 @@
     }
     
   }
+
   .viewAll {
     display: flex;
     align-items: center;
@@ -133,5 +134,10 @@
     &:hover {
       color: #6c5fbc;
     }
+  }
+  .restaurantDishes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
