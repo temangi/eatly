@@ -8,9 +8,6 @@
   .get {
     position: relative;
     margin-bottom: 40px;
-    h1 {
-      padding-bottom: 20px;
-    }
     main {
       background: #6c5fbc;
       background-image: url("../../../assets/back.svg");
@@ -18,21 +15,18 @@
       background-repeat: no-repeat;
       background-size: cover;
       padding: 50px;
-      height: 150px;
       color: #ffffff;
       align-items: flex-start;
       border-radius: 25px;
       position: relative;
       h1 {
-        font-weight: 800;
-        font-size: 80px;
+        font-weight: 900;
+        font-size: 50px;
         font-family: "Inter", serif !important;
       }
       h2 {
-        position: absolute;
-        top: 55%;
-        font-weight: 600;
-        font-size: 45px;
+        font-weight: 900;
+        font-size: 25px;
         color: white;
         font-family: "Inter", serif !important;
       }
@@ -83,8 +77,7 @@
       }
     }
     .graph {
-      width: 100%;
-      height: auto;
+      // width: 100%;
     }
     div {
       justify-content: space-evenly;

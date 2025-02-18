@@ -1,6 +1,22 @@
-.dashboard {
-  display: grid;
-  grid-template-columns: 15% 55% 25%;
-  gap: 40px;
-  padding-right: 30px;
+
+.dashboardMain{
+    padding : 50px 100px ;
+
+    .main{
+        background: #5C4EAE;
+        .title{
+            font-size: 50px;
+            color: #f9f9f9;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .dashboard {
+            margin-top: 10%;
+            display: grid;
+            grid-template-columns: 15% 55% 25%;
+            gap: 20px;
+            font-size: 12px;
+            background: white;
+          }
+    }
 }

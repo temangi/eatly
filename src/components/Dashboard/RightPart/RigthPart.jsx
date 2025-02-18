@@ -58,24 +58,24 @@ function RigthPart() {
           <text
             x="30"
             y="120"
-            font-family="Arial"
-            font-size="20"
+            fontFamily="Arial"
+            fontSize="20"
             fill="white"
-            letter-spacing="5"
+            letterSpacing="5"
           >
             4714 2400 6201 1524
           </text>
 
-          <text x="30" y="170" font-family="Arial" font-size="12" fill="#999">
+          <text x="30" y="170" fontFamily="Arial" fontSize="12" fill="#999">
             Cad Holder
           </text>
-          <text x="30" y="190" font-family="Arial" font-size="20" fill="white">
+          <text x="30" y="190" fontFamily="Arial" fontSize="20" fill="white">
             Bayana M
           </text>
 
           <circle cx="340" cy="180" r="20" fill="#EB001B" />
           <circle cx="360" cy="180" r="20" fill="#F79E1B" />
-          <circle cx="350" cy="180" r="20" fill="#FF5F00" fill-opacity="0.6" />
+          <circle cx="350" cy="180" r="20" fill="#FF5F00" fillOpacity="0.6" />
         </svg>
 
         <div className={scss.walletDown}>{operations}</div>

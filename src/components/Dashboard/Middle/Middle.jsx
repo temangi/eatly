@@ -68,9 +68,9 @@ function Middle() {
           <h1>50% OFF</h1>
           <h2>Daily deals</h2>
         </main>
-        <Image className={scss.tamak} priority src={tamak} alt="cake" />
+        <Image width={"200"} className={scss.tamak} priority src={tamak} alt="cake" />
       </section>
-      <section className={scss.chart}>
+      {/* <section className={scss.chart}>
         <header>
           <h1>Order Chart</h1>
           <aside>
@@ -82,9 +82,9 @@ function Middle() {
             </p>
           </aside>
         </header>
-        <Image className={scss.graph} src={graph} alt="" />
+        <Image className={scss.graph} width={"400"} src={graph} alt="" />
         <div>{date}</div>
-      </section>
+      </section> */}
       <section className={scss.bottomCards}>
         <div className={scss.purchasesPart}>
           <header className={scss.header}>
