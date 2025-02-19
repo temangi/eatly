@@ -48,7 +48,7 @@ function Chicken() {
   ];
 
   const purchasesCards = purchases.map(({ img, title, desc, price, back }, index) => (
-    <div className={scss.chickenLeft}>
+    <div className={scss.chickenLeft} key={index}>
       <div className={scss.cardMain}>
       <aside>
         <Image src={img} alt="" />
