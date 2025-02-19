@@ -1,0 +1,77 @@
+.food {
+    position: relative;
+    padding:150px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    .foodDec {
+       position: absolute;
+       right: 35%;
+       top: 100px;
+    }
+
+    h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 45px;
+
+        span {
+            color: #6C5FBC;
+        }
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        font-size: 23px;
+        font-weight: 600;
+        color: #353446;
+        gap: 40px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border-bottom: 2px solid #ADADAD;
+            padding-bottom: 30px;
+            gap: 30px;
+
+            header {
+                cursor: pointer;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            span {
+                color: #686868;
+                font-size: 17px;
+                width: 70%;
+                font-weight: 400;
+                opacity: 0;
+                visibility: hidden;
+                height: 0;
+                overflow: hidden;
+                position: relative;
+                transition: opacity 1s ease-in-out, visibility 0s 1s, height 1s ease-in-out;
+
+                &.open {
+                    opacity: 1;
+                    visibility: visible;
+                    height: auto;
+                    position: relative;
+                    transition: opacity 1s ease-in-out, visibility 0s 0s, height 1s ease-in-out;
+                }
+
+                &.close {
+                    opacity: 0;
+                    visibility: hidden;
+                    height: 0;
+                    position: absolute;
+                    transition: opacity 1s ease-in-out, visibility 0s 1s, height 1s ease-in-out;
+                }
+            }
+        }
+    }
+}
