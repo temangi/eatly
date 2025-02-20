@@ -6,6 +6,7 @@ import Link from "next/link";
 import logo from "@/assets/signUp/logo.svg";
 import imgMain from "@/assets/signUp/imgMain.svg";
 import { arr, arr2 } from "./info";
+import Input from "./Input/Input";
 
 function SignUp() {
 
@@ -15,13 +16,7 @@ function SignUp() {
     <Image key={index} src={el} className={scss.typeImg} alt="" />
   ));
 
-  const infos = arr2.map(({ img, placeholder, img2 }, index) => (
-    <form className={scss.userInfo} key={index}>
-      <Image src={img} alt="" />
-      {toggleSeen ? <input type="text" placeholder={placeholder} /> : <input type="password" placeholder={placeholder} />}
-      <Image src={img2}  alt="" onClick={() => setToggleSeen(!toggleSeen)} />
-    </form>
-  ));
+  const infos = arr2.map((el, index) => <Input key={index} {...el}/>);
 
   return (
     <div className={scss.signUp}>
@@ -31,9 +26,9 @@ function SignUp() {
           <h1>Sign Up To eatly</h1>
           <div>{type} </div>
           <p>or</p>
-          <article className={scss.inputs}>
+          <form  className={scss.inputs}>
             {infos} <button type="submit">Sign Up</button>
-          </article>
+          </form>
 
           <span>
             Already Have An Account?{" "}
