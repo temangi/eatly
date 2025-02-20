@@ -1,0 +1,75 @@
+.aside {
+  background: #f9f9f9;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    header {
+      border-bottom: 1px solid #100e0e74;
+      padding-bottom: 20px;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      .navigate {
+        display: flex;
+        gap: 10px;
+        border-radius: 5px;
+        padding: 10px 10px;
+        transition: 0.4s ease-in;
+        align-items: center;
+        cursor: pointer;
+        span {
+          color: #6e757c;
+          font-weight: 500;
+        }
+        .message {
+          background: #5c4eae;
+          padding: 5px 10px;
+          border-radius: 50px;
+          font-size: 13px;
+          color: white;
+          margin-left: 10px;
+        }
+        &:hover {
+          background: #5c4eae;
+          span {
+            color: white;
+          }
+          .img {
+            path {
+              stroke: white;
+            }
+            rect {
+              stroke: white;
+            }
+          }
+          .message {
+            background: none;
+          }
+        }
+      }
+    }
+  }
+  aside {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .info {
+      display: flex;
+      gap: 10px;
+      cursor: pointer;
+      padding: 0 10px;
+      p {
+        color: #6e757c;
+        font-weight: 500;
+      }
+    }
+  }
+}
