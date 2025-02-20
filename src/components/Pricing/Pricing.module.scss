@@ -1,0 +1,96 @@
+.outsidePricing {
+  padding: 100px;
+  .insidePricing {
+    box-shadow: 0px 2px 100px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    header {
+      padding: 50px;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      article {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-bottom: #cbcbcb 2px solid;
+        padding-bottom: 50px;
+        h1 {
+          font-size: 30px;
+        }
+        span {
+          color: #6e757c;
+
+          font-size: 17px;
+        }
+      }
+      .price {
+        aside {
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-start;
+          border-bottom: #cbcbcb 2px solid;
+          padding: 50px 0;
+          h1 {
+            font-size: 50px;
+          }
+          h2{
+            height: 50px;
+          }
+          span {
+            display: flex;
+            align-items: flex-end;
+            color: #6e757c;
+          }
+        }
+      }
+    }
+    main {
+      padding: 0px 50px 50px 50px;
+      gap: 40px;
+      display: flex;
+      flex-direction: column;
+      .feature {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+        border-bottom: #cbcbcb 2px solid;
+        gap: 25px;
+        nav {
+          display: grid;
+          grid-template-columns: 1.6fr 1fr 1fr;
+
+          p {
+            color: #606060;
+            font-size: 18px;
+          }
+          .done{
+            background-color : #6C5FBC;
+            border-radius: 50%;
+            padding: 8px 7px;
+          }
+          .krestik {
+            background-color: red;
+            border-radius: 50%;
+            padding: 8px 10px;
+          }
+          
+        }
+      }
+    }
+    footer{
+      padding: 0px 50px 50px 50px;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      button{
+        background-color: #6C5FBC;
+        color: white;
+        width: 40%;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 10px;
+        height: 40px;
+        cursor: pointer;
+      }
+    }
+  }
+}
