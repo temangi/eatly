@@ -19,7 +19,7 @@ const arr = [
 
 function Contact() {
     const inputs = arr.map( ({type,plaseholder},index) =>
-         <input type={type} placeholder={plaseholder} key={index}/>  )
+         <input required type={type} placeholder={plaseholder} key={index}/>  )
   return (
     <>
     <section className={scss.contact}>
