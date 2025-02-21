@@ -7,6 +7,8 @@ import logo from "@/assets/signUp/logo.svg";
 import imgMain from "@/assets/signUp/imgMain.svg";
 import { arr, arr3 } from "../SignUp/info";
 import Inputs from "./Input/Inputs";
+import Header from '@/components/Header/Header.jsx'
+import Footer from "../Footer/Footer";
 
 function LogIn() {
   const [toggleScreen, setToggleScreen] = useState(false);
@@ -19,11 +21,16 @@ function LogIn() {
   const infos = arr3.map((el, index) => <Inputs key={index} {...el} />);
 
   return (
+    <>
     <div className={scss.signUp}>
       <section className={scss.leftPart}>
-        <Link href={"/"}>
-          <Image src={logo} priority alt="" />
-        </Link>
+      <header>
+          {" "}
+          <Link href={"/"} className={scss.header}>
+            <Image src={logo} priority alt="" />
+          </Link>
+          <div className={scss.adaptHeader}><Header/></div>
+        </header>
         {toggleScreen ? (
           <section className={scss.reset}>
             <h1>Forget Password</h1>
@@ -70,7 +77,7 @@ function LogIn() {
             <p>or</p>
             <form className={scss.inputs}>
               {infos}{" "}
-              <span onClick={() => setToggleScreen(!toggleScreen)}>
+              <span className={scss.forgot} onClick={() => setToggleScreen(!toggleScreen)}>
                 Forgot Password?
               </span>{" "}
               <button type="submit">Sign In</button>
@@ -101,7 +108,10 @@ function LogIn() {
           </span>
         </article>
       </section>
+      <footer><Footer/> </footer>
     </div>
+    
+    </>
   );
 }
 
