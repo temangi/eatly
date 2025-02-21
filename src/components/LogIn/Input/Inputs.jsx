@@ -1,10 +1,13 @@
-import { useState } from "react";
-import Image from "next/image";
-import scss from "../SignUp.module.scss";
+"use client";
+import React, { useState } from "react";
+import scss from "../../SignUp/SignUp.module.scss";
 
-function Input({ img, placeholder, type }) {
+function Inputs({ img, placeholder, type }) {
+    
   const [toggleSeen, setToggleSeen] = useState(false);
+
   const [value, setValue] = useState("");
+
 
   return (
     <div className={`${scss.userInfo} ${value ? scss.active : ""} `}>
@@ -46,4 +49,4 @@ function Input({ img, placeholder, type }) {
   );
 }
 
-export default Input;
+export default Inputs;

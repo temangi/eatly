@@ -1,5 +1,5 @@
-"use client"
-import React, { useState } from "react";
+"use client";
+import React from "react";
 import scss from "./SignUp.module.scss";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,24 +9,23 @@ import { arr, arr2 } from "./info";
 import Input from "./Input/Input";
 
 function SignUp() {
-
-    const [toggleSeen, setToggleSeen] = useState(false)
-
   const type = arr.map((el, index) => (
-    <Image key={index} src={el} className={scss.typeImg} alt="" />
+    <Image key={index} src={el} priority className={scss.typeImg} alt="" />
   ));
 
-  const infos = arr2.map((el, index) => <Input key={index} {...el}/>);
+  const infos = arr2.map((el, index) => <Input key={index} {...el} />);
 
   return (
     <div className={scss.signUp}>
       <section className={scss.leftPart}>
-        <Image src={logo} alt="" />
+        <Link href={"/"}>
+          <Image src={logo} priority alt="" />
+        </Link>
         <main>
           <h1>Sign Up To eatly</h1>
           <div>{type} </div>
           <p>or</p>
-          <form  className={scss.inputs}>
+          <form className={scss.inputs}>
             {infos} <button type="submit">Sign Up</button>
           </form>
 
@@ -43,7 +42,7 @@ function SignUp() {
         </article>
       </section>
       <section className={scss.rightPart}>
-        <Image src={imgMain} className={scss.imgMain} alt="" />
+        <Image priority src={imgMain} className={scss.imgMain} alt="" />
         <article className={scss.texts}>
           <h1>Find Foods With Love </h1>
           <span>
