@@ -1,5 +1,11 @@
 import React from "react";
 import scss from "./Article.module.scss";
+import img from "../../assets/Articles/photo.svg";
+import img2 from "../../assets/Articles/Image.svg"
+import img3 from "../../assets/Articles/Image (1).svg"
+import ava from "../../assets/Articles/ava.svg"
+import arrow from "../../assets/Article/arroww.svg"
+import Image from "next/image";
 
 function Article() {
   const arr = [
@@ -17,6 +23,37 @@ function Article() {
       <h1>{title}</h1>
       <p>{desc}</p>
     </section>
+  ));
+
+  const arr2 = [
+    {
+      img: img,
+      title: "How To Deposit In DaPay ?",
+    },
+    {
+      img: img2,
+      title: "Top 5 Business Ideas",
+    },
+    {
+      img: img2,
+      title: "How To Control Money ?",
+    },
+  ];
+  const seeArr2 = arr2.map(({ img, title }, index) => (
+    <article key={index}>
+        <b style={{backgroundImage : `url(${img.src})`}} className={scss.photos}></b>
+      <h1>{title}</h1>
+      <aside>
+          <div className={scss.mini}>
+              <Image className={scss.ava} src={ava} alt="ava"/>
+              <nav className={scss.miniNav}>
+                  <p>Written By</p>
+                  <h6>Perperzon</h6>    
+              </nav>
+          </div>
+          <span>15 DEC, 2022</span>
+      </aside>
+    </article>
   ));
   return (
     <section className={scss.article}>
@@ -40,11 +77,12 @@ function Article() {
           </nav>
           <div>{seeArr}</div>
         </main>
-        <aside>
+        <aside className={scss.top}>
           <h1>Top Articles</h1>
-
+          <div className={scss.cards}>{seeArr2}</div>
         </aside>
       </header>
+      <button>Next Article <Image src={arrow} alt="arrow"/></button>
     </section>
   );
 }
