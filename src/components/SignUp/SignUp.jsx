@@ -7,8 +7,11 @@ import logo from "@/assets/signUp/logo.svg";
 import imgMain from "@/assets/signUp/imgMain.svg";
 import { arr, arr2 } from "./info";
 import Input from "./Input/Input";
+import Footer from "../Footer/Footer";
+import Header from '@/components/Header/Header.jsx'
 
 function SignUp() {
+
   const type = arr.map((el, index) => (
     <Image key={index} src={el} priority className={scss.typeImg} alt="" />
   ));
@@ -16,11 +19,16 @@ function SignUp() {
   const infos = arr2.map((el, index) => <Input key={index} {...el} />);
 
   return (
+    <>
     <div className={scss.signUp}>
       <section className={scss.leftPart}>
-        <Link href={"/"}>
-          <Image src={logo} priority alt="" />
-        </Link>
+        <header>
+          {" "}
+          <Link href={"/"} className={scss.header}>
+            <Image src={logo} priority alt="" />
+          </Link>
+          <div className={scss.adaptHeader}><Header/></div>
+        </header>
         <main>
           <h1>Sign Up To eatly</h1>
           <div>{type} </div>
@@ -52,7 +60,13 @@ function SignUp() {
           </span>
         </article>
       </section>
+      <footer>
+      <Footer/> 
+      </footer>
     </div>
+    
+    
+    </>
   );
 }
 

@@ -141,3 +141,37 @@
     justify-content: space-between;
   }
 }
+
+@media (max-width: 768px){
+  .dishes{
+    border-top: 1px solid #CBCBCB;
+    border-bottom: 1px solid #CBCBCB;
+    padding: 100px 50px 150px 50px;
+    margin-top: 80px;
+    position: relative;
+    .restaurantDishes{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    h1{
+      display: flex;
+      flex-direction: column;
+      font-size: 50px;
+    }
+    main{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 50px;
+      .eachCard:nth-of-type(5){
+        display: none;
+      }
+    }
+    .viewAll{
+      position: absolute;
+      bottom: 40px;
+      right: 60px;
+      font-size: 25px;
+    }
+  }
+}
