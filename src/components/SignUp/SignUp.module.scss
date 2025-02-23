@@ -185,8 +185,9 @@
       padding-bottom: 60px;
     }
     .main {
-      display: flex;
-      flex-direction: column;
+      // display: flex;
+      // flex-direction: column;
+      display: grid;
       align-items: center;
       width: 100%;
       .userInfo {
@@ -263,8 +264,10 @@
           display: block;
         }
       }
+      main{
+        display: grid;
+      }
       .inputs {
-        width: 100%;
         .forgot{
           font-size: 27px;
         }
@@ -279,6 +282,9 @@
           font-size: 38px;
           padding-bottom: 40px;
         }
+        p{
+          text-align: center;
+        }
         div {
           display: grid;
           grid-template-columns: 1fr 1fr;
@@ -288,6 +294,7 @@
         }
         span {
           font-size: 24px;
+          text-align: center;
         }
       }
       article {
