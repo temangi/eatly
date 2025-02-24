@@ -18,7 +18,7 @@
             height: 117px;
             position: absolute;
             right: 32%;
-            bottom: 457;
+            bottom: 457px;
         }
     }
     .contactRight , .contactRight > form{
@@ -30,6 +30,9 @@
         width: 50%;
         gap: 70px;
         padding-left: 15%;
+        .titleAd{
+            display: none;
+        }
         h2{
             font-size: 40px;
             span{
@@ -84,4 +87,48 @@
         right: 34%;
         bottom: -345px;
     }
+}
+
+@media (max-width: 756px) {
+ .contact{
+    background: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    .contactLeft{
+        display: none;
+    }
+    .contactRight{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding-left: 0;
+        .titleAd{
+            display: block;
+            background-color: #6C5FBC;
+            color: white;
+            padding: 20px 50px 100px 50px ;
+            font-size: 24px;
+            text-align:center ;
+        }
+        .title{
+            display: none;
+           
+        }
+    }
+    .phone{
+        display: none;
+    }
+ }  
+ .imgs{
+    .arrow{
+        top: 30%;
+        z-index: 1;
+        filter: invert(1) brightness(4) saturate(100%);
+        transform: rotate(90deg);
+        left : 15%;
+    }
+    .stars{
+        display: none;
+    }
+   }    
 }

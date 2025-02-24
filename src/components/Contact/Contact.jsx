@@ -25,10 +25,11 @@ function Contact() {
     <section className={scss.contact}>
         <div className={scss.contactLeft}>
             <h1>Just Contact</h1>
-            <Image src={strelka} alt="" /> 
+            <Image src={strelka} alt="" />
         </div>
         <div className={scss.contactRight}>
-            <h2>Customer <span>Support</span></h2>
+            <h2 className={scss.title}>Customer <span>Support</span></h2>
+            <h2 className={scss.titleAd}>Contact us</h2>
             <form action="{}">
                 {inputs}
                 <textarea placeholder="Enter The Problem Or Query " name="" id=""></textarea>
@@ -40,7 +41,7 @@ function Contact() {
     <main className={scss.imgs}>
         <Image className={scss.stars} src={stars} alt="" />
         <Image className={scss.arrow} src={Arrow} alt="" />
-        </main>
+    </main>
     </>
   )
 }
