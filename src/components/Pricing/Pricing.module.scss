@@ -32,7 +32,7 @@
           h1 {
             font-size: 50px;
           }
-          h2{
+          h2 {
             height: 50px;
           }
           span {
@@ -62,8 +62,8 @@
             color: #606060;
             font-size: 18px;
           }
-          .done{
-            background-color : #6C5FBC;
+          .done {
+            background-color: #6c5fbc;
             border-radius: 50%;
             padding: 8px 7px;
           }
@@ -72,16 +72,15 @@
             border-radius: 50%;
             padding: 8px 10px;
           }
-          
         }
       }
     }
-    footer{
+    footer {
       padding: 0px 50px 50px 50px;
       display: grid;
       grid-template-columns: 1.5fr 1fr 1fr;
-      button{
-        background-color: #6C5FBC;
+      button {
+        background-color: #6c5fbc;
         color: white;
         width: 40%;
         font-weight: 700;
@@ -90,6 +89,105 @@
         border-radius: 10px;
         height: 40px;
         cursor: pointer;
+      }
+    }
+  }
+  .adaptive {
+    display: none;
+  }
+}
+
+@media (max-width: 870px) {
+  .outsidePricing {
+    .insidePricing {
+      display: none;
+    }
+    .adaptive {
+      display: block;
+
+      .adaptMain{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .block {
+          padding: 40px 30px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          box-shadow: 0px 2px 100px rgba(0, 0, 0, 0.3);
+          border-radius: 15px;
+          main{
+            max-height: 500px;
+            opacity: 1;
+            transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+            overflow: hidden;
+          }
+
+          .hidden {
+            max-height: 0;
+            opacity: 0;
+          }
+      
+          .name {
+            font-size: 30px;
+          }
+          .price {
+            aside {
+              display: flex;
+              align-items: flex-end;
+              justify-content: flex-start;
+              border-bottom: #cbcbcb 2px solid;
+              padding-bottom: 30px;
+              h1 {
+                font-size: 50px;
+              }
+              h2 {
+                height: 50px;
+              }
+              span {
+                display: flex;
+                align-items: flex-end;
+                color: #6e757c;
+              }
+            }
+          }
+          span {
+            color: #606060;
+          }
+          button {
+            background-color: #6c5fbc;
+            color: white;
+            width: 50%;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 10px;
+            height: 40px;
+            cursor: pointer;
+          }
+          p {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            font-weight: 700;
+          }
+          main{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            nav{
+              display: flex;
+              align-items: center;
+              gap: 15px;
+              color: #606060;
+              .adaptYes{
+                background-color: #6c5fbc;
+                border-radius: 50%;
+                padding: 6px 5px;
+              }
+            }
+          }
+        }
       }
     }
   }
